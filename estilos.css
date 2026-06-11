@@ -1,0 +1,118 @@
+:root {
+    --color-primario: rgb(255, 161, 161);
+    --color-secundario: rgb(161, 235, 255);
+    --color-terciario: rgb(189, 161, 255);
+}
+
+
+
+font-face {
+    font-family: Jua, ;
+    src: url("fonts/Jua-Regular.ttf");
+}
+
+body {
+    background-image: url(img/1bg.gif);
+    font-family: "Jua", system-ui;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    transition: 0.3 ease;
+}
+
+section {
+    color: rgb(161, 190, 248);
+    background-color: white;
+    border: 3px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-style: dashed;
+}
+
+#filtro button {
+    color: rgb(100, 70, 171);
+    background-color: rgb(161, 190, 248);
+    width: 200px;
+    margin: 0 auto;
+    padding: 5pvh 10vh;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-width: 5vh;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.principal {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.galeria {
+    color: rgb(161, 190, 248);
+    background-color: white;
+    border: 3px;
+    margin: 8px;
+    padding: 20px 20px;
+    border-style: dashed;
+}
+
+.illusimg {
+    margin: 20px;
+    padding: 10px;
+}
+
+.textlimit {
+    max-width: 1000px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+h4 {
+    color: var(--color-primario);
+}
+
+
+
+#titulo {
+    color: var(--color-primario);
+}
+
+
+.boton {
+    margin: 20px;
+    padding: 10px 30px 10px;
+}
+
+
+
+
+/* añadir ::before o ::after */
+p::before {
+    content: ">< ,,x> ";
+    color: var(--color-pr);
+}
+
+a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    border: 3px;
+    border-style: groove;
+}
+
+/* añadir hover */

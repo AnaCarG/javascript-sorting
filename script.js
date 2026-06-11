@@ -1,27 +1,27 @@
-  console.log("Hola Mundo");
+const elementos = document.querySelectorAll("button");
 
-// variables let y const
+console.log(elementos)
 
-  let edad = 53; // number
+elementos.forEach(
+    (elemento) => elemento.addEventListener("click", activo)
+)
+// add y remove
 
-  const nombre = "Cristian"; // string
-
-  const titulo = document.querySelector("h1");
-
-  console.log(titulo);
-
-console.log(titulo.textContent);
-
-// titulo.textContent = "adiós mundo";
-
-const boton = document.querySelector(".btn");
-
-console.log(boton);
-
-boton.addEventListener("click" , cambiarTitulo);
-
-function cambiarTitulo(){
-    titulo.textContent = "Adiós mundo";
-    titulo.style.color = "#fff";
-    titulo.classList.toggle("rojo");
+function activo(a) {
+    a.target.style.color = "yellow";
+    const categoria = a.target.dataset.categoria; console.log(categoria);
+    a.target.textContent = categoria;
 }
+
+const ilustraciones = document.querySelectorAll("ilustraciones")
+
+console.log(ilustraciones)
+
+if (ilustraciones) {
+  style.display = ""
+}
+else{
+    style.display = "none"
+}
+
+ 

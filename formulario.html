@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<!-- añadir enlace de css a esta pagina -->
+<!-- añadir nueva ilustracion para ocupar mas espacio -->
+
+<body>
+    <h2 class="txtcenter">Solicitud de Ilustración</h2>
+    <p class="txtcenter">Porfavor rellena este formulario solo si estas dispuesto a trabajar conmigo y aceptas los TDS
+    </p>
+    <section>
+        <br>
+        <br>
+        <form action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="5" size="7">
+            <br>
+            <br>
+            <label>Apellidos
+                <input type="text" name="apellidos" placeholder="Tus apellidos">
+            </label>
+            <br>
+            <br>
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" inputmode="numeric">
+            <br>
+            <br>
+            <label for="correo"> Correo electrónico </label>
+            <input type="email" id="correo" name="correo" required placeholder="nombre@dominio.com">
+            <br>
+            <h2>Tipo de Ilustración</h2>
+            <label for="busto">Busto</label>
+            <input type="radio" id="busto" name="tipo" value="busto">
+            <label for="medio">Medio cuerpo</label>
+            <input type="radio" id="medio" name="tipo" value="medio">
+            <label for="entero">Cuerpo entero</label>
+            <input type="radio" id="hamster" name="tipo" value="entero">
+            <h2>Tipo de uso</h2>
+            <label for="personal">Personal</label>
+            <input type="radio" id="personal" name="uso" value="personal">
+            <label for="comercial">Comercial</label>
+            <input type="radio" id="comercial" name="uso" value="comercial">
+            <br>
+            <br>
+            <fieldset>
+                <legend>Detalles</legend>
+                <label for="foto">Sube una referencia</label>
+                <input type="file" id="foto" name="foto" multiple>
+                <br><br>
+                <label for="bio">Describe la ilustración deseada </label>
+                <br>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <h3>¿Necesitas la ilustración para una fecha concreta?</h3>
+            <label for="tiempo">Límite de tiempo</label>
+            <input type="date" id="tiempo" name="tiempo">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section><br>
+    <br>
+    <!-- añadir enlaces a las otras paginas aqui -->
+    <ul>
+        <li><a class="boton" href="ilustraciones.html">Ilustraciones</a></li>
+        <li><a class="boton" href="index.html">Home</a></li>
+        <li><a class="boton" href="formulario.html">Solicitar ilustración</a></li>
+        <li><a class="boton" href="proyectos.html">Proyectos</a></li>
+    </ul>
+</body>
+
+</html>
